@@ -21,8 +21,10 @@ main {
 .box{
     background-color: #fff;
     padding: 10px;
-    margin-bottom: 16px;
-    flex: 0 1 32%;
+    margin: 10px;
+    flex: 1 1 30%;
+    transition: flex-basis 0.2s linear;
+    min-width: 400px;
 }
 
 .box.stack{
