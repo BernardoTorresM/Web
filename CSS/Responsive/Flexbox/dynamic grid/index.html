@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Flexbox Grid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <strong>Change Layout: </strong>
+    <a href="#" class="stack">Stack</a>
+    <a href="#" class="grid">Grid</a>
+
+    <main>
+        <article class="box">
+            <h2 class="title">
+                Article 1
+            </h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad modi nulla praesentium excepturi velit voluptatibus beatae sequi rerum fugit accusamus assumenda laudantium minima facilis, consectetur eius aperiam omnis labore neque!
+            </p>
+        </article>
+
+        <article class="box">
+            <h2 class="title">
+                Article 2
+            </h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad modi nulla praesentium excepturi velit voluptatibus beatae sequi rerum fugit accusamus assumenda laudantium minima facilis, consectetur eius aperiam omnis labore neque!
+            </p>
+        </article>
+
+        <article class="box">
+            <h2 class="title">
+                Article 3
+            </h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad modi nulla praesentium excepturi velit voluptatibus beatae sequi rerum fugit accusamus assumenda laudantium minima facilis, consectetur eius aperiam omnis labore neque!
+            </p>
+        </article>
+
+        <article class="box">
+            <h2 class="title">
+                Article 4
+            </h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad modi nulla praesentium excepturi velit voluptatibus beatae sequi rerum fugit accusamus assumenda laudantium minima facilis, consectetur eius aperiam omnis labore neque!
+            </p>
+        </article>
+
+        <article class="box">
+            <h2 class="title">
+                Article 5
+            </h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad modi nulla praesentium excepturi velit voluptatibus beatae sequi rerum fugit accusamus assumenda laudantium minima facilis, consectetur eius aperiam omnis labore neque!
+            </p>
+        </article>
+
+        <article class="box">
+            <h2 class="title">
+                Article 6
+            </h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad modi nulla praesentium excepturi velit voluptatibus beatae sequi rerum fugit accusamus assumenda laudantium minima facilis, consectetur eius aperiam omnis labore neque!
+            </p>
+        </article>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+
+    <script>
+        $("a.stack").on("click", function(){ 
+            $("article").addClass("stack");
+        })
+        $("a.grid").on("click", function(){ 
+            $("article").removeClass("stack");
+        })
+    </script>
+</body>
+</html>
